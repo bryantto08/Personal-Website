@@ -1,0 +1,30 @@
+.hover-options {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.hobbies-interests {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    font-size: 30px;
+    justify-content: center;
+}
+.facts {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    font-size: 30px;
+    justify-content: center;
+}
