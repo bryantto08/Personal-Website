@@ -1,0 +1,26 @@
+.project-button {
+    background: none;
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.project-button:hover {
+    font-weight: bold;
+    filter: brightness(1.05);
+    cursor: pointer;
+}
+
+.project-img {
+    width: 50px;
+}
+
+
+.project-options {
+    display: flex;
+    justify-content: center;
+}
+
