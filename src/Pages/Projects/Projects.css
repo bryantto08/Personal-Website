@@ -42,7 +42,7 @@
     position: absolute;
 }
 
-.project-img {
+.discord-project-img {
     opacity: 0;
     margin-top: 300px;
     border-radius: 20px;
@@ -53,6 +53,18 @@
     animation-fill-mode: forwards;
 
 
+}
+
+.scraper-project-img {
+    opacity: 0;
+    margin-top: 300px;
+    border-radius: 20px;
+    width: 490px;
+    height: 366px;
+    animation-name: move-img;
+    animation-duration: 2s;
+    position: absolute;
+    animation-fill-mode: forwards;
 }
 
 .project-content {

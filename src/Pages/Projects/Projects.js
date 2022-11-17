@@ -2,8 +2,21 @@ import React, {useState} from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import logo from "./ProjectImages/discord-ss.png";
 import "./Projects.css";
+import scraperLogo from "./ProjectImages/scraper.png";
+
 function Projects() {
     const [DiscordBot, setDiscordBot] = useState(false);
+    const [ESPNScraper, setScraper] = useState(false);
+
+    function botOn () {
+        setScraper(false);
+        setDiscordBot(true);
+    }
+
+    function scraperOn() {
+        setDiscordBot(false);
+        setScraper(true);
+    }
     return(
         <div>
             <div>
@@ -12,8 +25,8 @@ function Projects() {
             <div>
                 <h2>My Projects: </h2>
                 <div className="project-options">
-                    <button className="project-button">ESPN Scraper</button>
-                    <button className="project-button" onClick={(e) => {setDiscordBot(true)}}>Discord Bot</button>
+                    <button className="project-button" onClick={(e) => scraperOn()}>ESPN Scraper</button>
+                    <button className="project-button" onClick={(e) => botOn()}>Discord Bot</button>
                 </div>
                 {DiscordBot && (
                 <div className="project-content">
@@ -28,8 +41,23 @@ function Projects() {
                         <li>etc.</li>
                     </ul>
                 </div>
-                <img className="project-img" src={logo} alt="logo"></img>
+                <img className="discord-project-img" src={logo} alt="logo"></img>
             </div>  
+                )}
+                {ESPNScraper && (
+                    <div className="project-content">
+                    <div className="project-text">
+                        <h3>ESPN Scraper</h3>
+                        <h5>Uses Selenium and BeautifulSoup to retrieve NFL information from the ESPN website.</h5>
+                        <p>Retrieves Football information such as:</p>
+                        <ul>
+                            <li>NFL Teams and their statistical leaders</li>
+                            <li>Individual Player Statistics</li>
+                            <li>WIP: Planning to retrieve news articles and links from ESPN website.</li>
+                        </ul>
+                    </div>
+                    <img className="scraper-project-img" src= {scraperLogo} alt="scraper-logo"></img>
+                    </div>
                 )}
             </div>
 
