@@ -14,8 +14,49 @@
     cursor: pointer;
 }
 
+@keyframes move-img {
+    from {left: 0px; top: 0px;}
+    to {left: 800px; top: 0px; opacity: 100;}
+    /* from {background-color: #D4F1F4;}
+    to {background-color: black;} */
+    
+}
+
+@keyframes move-text {
+    from {left: 0px; top: 0px;}
+    to {left: 300px; top: 0px; opacity: 100;}
+
+}
+.project-text {
+    margin-top: 300px;
+    opacity: 100;
+    border-radius: 20px;
+    background-color: #a6abac;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 400px;
+    height: 366px;
+    animation-name: move-text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+
 .project-img {
-    width: 50px;
+    opacity: 0;
+    margin-top: 300px;
+    border-radius: 20px;
+    width: 500px;
+    animation-name: move-img;
+    animation-duration: 2s;
+    position: absolute;
+    animation-fill-mode: forwards;
+
+
+}
+
+.project-content {
+    display: flex;
 }
 
 
