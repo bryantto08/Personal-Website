@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-.hobbies-interests {
+.experience {
     display: flex;
     width: 300px;
     height: 40px;
@@ -27,4 +27,27 @@
     border-style: solid;
     font-size: 30px;
     justify-content: center;
+}
+.header {
+    padding-left: 20px;
+}
+li {
+    justify-content: center;
+}
+.experience-content {
+    display: flex;
+}
+.experience-text {
+    margin-top: 300px;
+    opacity: 100;
+    border-radius: 20px;
+    background-color: #a6abac;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 400px;
+    height: 366px;
+    animation-name: move-text;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: absolute;
 }

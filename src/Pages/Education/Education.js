@@ -13,7 +13,7 @@ function Education() {
                     <h3 style={{marginLeft: "20px"}}>New York University / Class of 2025</h3>
                     <ul>
                         <li>GPA: 4.0/ 4.0</li>
-                        <li>Dean's List (2021-2022)</li>
+                        <li>Dean's List (2021-2023)</li>
                         <li>Pursuing B.A. in Computer Science</li>
                     </ul>
                 </div>
@@ -27,12 +27,14 @@ function Education() {
                         <li>CS102: Data Structures</li>
                         <li>MATH121: Calculus I</li>
                         <li>MATH120: Discrete Math</li>
+                        <li>CS201: Computer Systems Org</li>
+                        <li>CS479: Data Management and Analysis</li>
                     </ul>
                 </div>
                 <div style={{marginLeft: "20px"}}>
                     <h3>Currently Taking:</h3>
                     <ul>
-                        <li>CS201: Computer Systems Org</li>
+                        <li>CS467: Applied Internet Technology</li>
                         <li>CS310: Basic Algorithms</li>
                     </ul>
                 </div>
